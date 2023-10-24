@@ -37,3 +37,8 @@ li {
     color: black;
 
 }
+.banner{
+    border: dotted 2px blue;
+    width: 100%;
+    padding: 3px;
+}
