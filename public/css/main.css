@@ -51,6 +51,10 @@ main .main-home {
     display: none;
 }
 
+.main-home{
+    background-color: var(--gris-claro);
+}
+
 /* TABLET */
 
 @media(min-width:768px){

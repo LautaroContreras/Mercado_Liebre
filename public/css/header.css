@@ -61,6 +61,17 @@ display: none;
     font-size: 12px;
     display:block;
   }
+
+  .top-list{
+    display: flex;
+    gap: 10px;
+  }
+
+  .bot-list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
 }
 
 /* DESKTOP */
