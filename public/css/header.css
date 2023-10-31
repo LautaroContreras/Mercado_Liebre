@@ -12,6 +12,7 @@ body .header .header-top-bar .container-search{
 
 .nav-bot-bar{
 font-size: 12px;
+display: none;
 }
 .nav-bot-bar .top-list{
     margin-bottom: 10px;
@@ -47,4 +48,31 @@ font-size: 12px;
     position: relative;
     left:50%;
 }
+.banner{
+    width: 100%;
+    padding: 3px;
+}
+ /* TABLET */
+ @media(min-width:768px){    
+ .burguer-menu {
+    display: none;
+ }
+ .nav-bot-bar{
+    font-size: 12px;
+    display:block;
+  }
+}
 
+/* DESKTOP */
+
+@media(min-width:1024px){
+    .burguer-menu {
+        display: none;
+     }
+
+     .nav-bot-bar{
+        font-size: 12px;
+        display:block;
+      }
+}
+ 

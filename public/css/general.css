@@ -5,7 +5,7 @@
 --celeste: #1259c3;
 --gris-oscuro: #666;
 --gris-claro: #ebebeb;
---Verde: #39b54a;
+--verde: #39b54a;
 
 /* FUENTES */
 --roboto:"roboto",sans-serif;
@@ -24,6 +24,8 @@
     box-sizing: border-box;
 }
 
+
+
 a {
     color: black;
     text-decoration: none;
@@ -37,8 +39,4 @@ li {
     color: black;
 
 }
-.banner{
-    border: dotted 2px blue;
-    width: 100%;
-    padding: 3px;
-}
+
