@@ -4,10 +4,44 @@ body .header{
 
 }
 
-body .header .header-top-bar .container-search{
+.header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+body .header .header-top-bar .containers-search{
     width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
+.search-bar{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+.search-bar input{
+    height: 30px;
+    width: 100%;
+    border: 0px solid yellow;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    color: var(--gris-oscuro);
+}
+
+.search-bar button{
+    position: relative;
+    right: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--gris-oscuro);
+    border-style: none;
 }
 
 .nav-bot-bar{
@@ -24,8 +58,7 @@ display: none;
 
 .header .logo{
     width: 50%;
-
-}
+} 
 
 
 
@@ -34,7 +67,7 @@ display: none;
     text-align: center;
     font-size: 12px;
     padding: 25px 0px;
-}
+} 
 
 .header .burguer-menu{
     background-color: var(--azul);
@@ -49,41 +82,81 @@ display: none;
     left:50%;
 }
 .banner{
-    width: 100%;
-    padding: 3px;
+   
+    display: block;
 }
+
+
+
  /* TABLET */
- @media(min-width:768px){    
- .burguer-menu {
-    display: none;
- }
- .nav-bot-bar{
-    font-size: 12px;
-    display:block;
-  }
+ @media (min-width:768px){    
+     body .header{
+        padding: 10px;
+    }
+    .header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 10px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
 
-  .top-list{
-    display: flex;
-    gap: 10px;
-  }
+     .header .logo{
+        width: 33%;
+    }
 
-  .bot-list{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
+     .header .compra{
+        max-width: 300px;
+        text-align: right;
+    }
+
+    .header .burguer-menu{
+        display: none;
+    }
+
+    .nav-bot-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .nav-bot-bar ul{
+        display: flex;
+    }
+
+    .nav-bot-bar li{
+        margin: 0 5px;
+    }
+
+    body .header .header-top-bar .containers-search{
+        display: flex;
+        align-items: center;
+        width: 33%;
+        justify-content: center;
+    }
+
+  
+
+    .search-bar input{
+        width: 250px;
+    }
+
+
+
+
 }
 
-/* DESKTOP */
+ /* DESKTOP */
 
 @media(min-width:1024px){
-    .burguer-menu {
+/*     .burguer-menu {
         display: none;
      }
 
      .nav-bot-bar{
         font-size: 12px;
         display:block;
-      }
-}
+      } */
+} 
  

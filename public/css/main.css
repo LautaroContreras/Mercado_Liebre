@@ -1,79 +1,118 @@
-.banner{
-   width: 100vw;  
+.banner {
+  width: 100vw;
 }
 
-.main-home h3{
-    color: var(--gris-oscuro);
-    text-align: center;
-    font-size: 25px;
+.main-home h3 {
+  color: var(--gris-oscuro);
+  text-align: center;
+  font-size: 25px;
 }
 
 main .main-home {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.main-home article{
-    width: 98%;
-    margin: auto;
-    margin-bottom: 10px;
+.main-home article {
+  width: 98%;
+  margin: auto;
+  margin-bottom: 10px;
 }
-.main-home .articulo .card{
-    border-top: 1px solid var(--gris-claro);
-    padding: 15px;
+.main-home .articulo .card {
+  border-top: 1px solid var(--gris-claro);
+  padding: 15px;
 }
-.main-home .articulo .card .info .descuento{
-    color: var(--verde);
-    font-size: 12px;
-    width: 70%;
-}
-
-.main-home .articulo .card{
-    position: relative;
+.main-home .articulo .card .info .descuento {
+  color: var(--verde);
+  font-size: 12px;
+  width: 70%;
 }
 
-.main-home .articulo .card .icono-carrito{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--verde);
-    background-color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    color: var(--verde);
+.main-home .articulo .card {
+  position: relative;
 }
 
-.card .descripcion-h5 .descripcion{
-    color: var(--gris-oscuro);
-    padding: 15px 10px 0 0 ;
-    display: none;
+.main-home .articulo .card .icono-carrito {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--verde);
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: var(--verde);
 }
 
-.main-home{
-    background-color: var(--gris-claro);
+.card .descripcion-h5 .descripcion {
+  color: var(--gris-oscuro);
+  padding: 15px 10px 0 0;
+  display: none;
+}
+
+.main-home {
+  background-color: var(--gris-claro);
+}
+
+.info {
+  display: flex;
+}
+
+.precio {
+  width: 30%;
+}
+
+.descuento {
+  width: 70%;
+
 }
 
 /* TABLET */
 
-@media(min-width:768px){
- .card .descripcion-h5 .descripcion{
-    display: block;
- }
- .main-home article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 768px) {
+
+.main-home h3 {
+    width: 100%;
+    text-align: start;
+    padding: 10px 0px 10px 20px
 }
+
+ 
+  .main-home article {
+    width: 45%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .main-home section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  
+
+  .card .descripcion-h5 .descripcion {
+    display: block;
+  }
 }
 
 /* DESKTOP */
 
-@media(min-width:1440px){
-    .card .descripcion-h5 .descripcion{
-       display: block;
-    }
-    .main-home article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+ @media(min-width:1024px){
 
-   }
+    .main-home article {
+        width: 23%;
+      }
+      .descuento{
+        width: 60%;
+      }
+
+      .precio{
+        width: 40%;
+      }
+   } 
